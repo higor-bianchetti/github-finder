@@ -269,12 +269,13 @@ img {
   border: none;
   cursor: pointer;
   margin-right: 0.5rem;
-  transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s;
   outline: none;
+  border-radius: 7px;
 }
 
 .btn:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .btn-link {
@@ -321,6 +322,11 @@ img {
 .badge-primary,
 .alert-primary {
   background-color: var(--primary-color);
+  color: var(--dark-main-color);
+}
+
+.btn-primary:hover {
+  color: var(--light-main-color);
 }
 
 .btn-light,
