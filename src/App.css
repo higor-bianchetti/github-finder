@@ -312,8 +312,15 @@ img {
   padding: 0.7rem;
   margin: 1rem 0;
   opacity: 0.9;
+  font-size: 0.9rem;
   background: var(--dark-main-color);
   color: var(--light-main-color);
+}
+
+.alert .close-alert {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
 }
 
 /* COMPONENTS COLORS */
@@ -322,10 +329,18 @@ img {
 .badge-primary,
 .alert-primary {
   background-color: var(--primary-color);
-  color: var(--dark-main-color);
+  color: var(--light-main-color);
 }
 
 .btn-primary:hover {
+  color: var(--light-main-color);
+}
+
+.btn-secondary,
+.bg-secondary,
+.badge-secondary,
+.alert-secondary {
+  background-color: var(--dark-secondary-color);
   color: var(--light-main-color);
 }
 

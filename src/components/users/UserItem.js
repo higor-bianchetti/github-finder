@@ -15,6 +15,7 @@ const UserItem = ({ user: { login, avatar_url, html_url } }) => {
         <a
           href={html_url}
           target='_blank'
+          rel='noopener noreferrer'
           className='btn btn-primary btn-sm my-1'>
           View
         </a>
