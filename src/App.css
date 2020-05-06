@@ -3,10 +3,12 @@
 /* ============= GLOBAL STYLES ============= */
 /* VARS */
 :root {
+  --white-color: #eeeeee;
+  --black-color: #000000;
   --dark-main-color: #222831;
   --dark-secondary-color: #393e46;
   --primary-color: #00adb5;
-  --light-main-color: #eeeeee;
+  --light-main-color: #ffffff;
   --light-secondary-color: #777777;
   --danger-color: #dc3545;
   --success-color: #28a745;
@@ -240,6 +242,44 @@ img {
   margin: 3rem 0;
 }
 
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-1 {
+  margin-bottom: 1;
+}
+
+.mb-2 {
+  margin-bottom: 2;
+}
+
+.mb-3 {
+  margin-bottom: 3;
+}
+
+/* FLEX */
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
 /* GRIDS */
 .grid-2 {
   display: grid;
@@ -319,7 +359,6 @@ img {
 
 .alert .close-alert {
   cursor: pointer;
-  display: inline-block;
   float: right;
 }
 
@@ -374,7 +413,7 @@ img {
 .badge-warning,
 .alert-warning {
   background-color: var(--warning-color);
-  color: var(--light-main-color);
+  color: var(--dark-main-color);
 }
 
 .btn-success,
@@ -382,7 +421,7 @@ img {
 .badge-success,
 .alert-success {
   background-color: var(--success-color);
-  color: var(--success-color);
+  color: var(--light-main-color);
 }
 
 /* IMAGES */
@@ -447,13 +486,13 @@ table th {
 }
 
 .navbar a {
-  color: var(--primary-color);
+  color: var(--light-main-color);
   padding: 0.45rem;
   margin: 0 0.25rem;
 }
 
 .navbar a:hover {
-  color: var(--light-main-color);
+  color: var(--white-color);
 }
 
 .navbar .welcome span {
